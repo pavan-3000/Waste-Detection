@@ -1,16 +1,16 @@
-
+pandas
 notebook
-numpy
+scikit-learn
 matplotlib
-seaborn
 python-box
 pyYAML
-tqdm
 ensure
 joblib
 types-pyYAML
-scipy
 Flask
+mlflow
 Flask-Cors
 gdown
+gunicorn
+xgboost
 -e .
