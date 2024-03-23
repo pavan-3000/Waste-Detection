@@ -38,19 +38,19 @@ def create_directory(path_dir:list,verbose=True):
         os.makedirs(path,exist_ok=True)
         if verbose:
             logging.info(f"created directory at {path}")
-"""
 
 
 
-def read_yaml(path_yaml:Path):
+
+def read_yaml_fike(path_yaml:str) -> dict:
     try:
-        with open(path_yaml) as f:
-            content = yaml.safe_load(path_yaml)
-            return content
+        with open(path_yaml,'rb') as f:
+            
+            return yaml.safe_load(f)
             logging.info("dataread")
     except Exception as e:
         raise CustomException(e,sys)
-
+"""
 def create_directory(path_dir:list,verbose=True):
     for path in path_dir:
         os.makedirs(path,exist_ok=True)
